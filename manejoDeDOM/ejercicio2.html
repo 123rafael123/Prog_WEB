@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2 </title>
+    <title>Ejercici o2 Seleccion de elementos por clase</title>
 </head>
 <body>
-    <div class="clase1"></div>
-    <div class="clase2"></div>
-    <div class="clase3"></div>
+    <div class="clase-1">elemento1</div>
+    <div class="clase-1">elemento2</div>
+    <div class="clase-1">elemento3</div>
+    <div class="clase-1">elemento4</div>
+    <div class="clase-1">elemento5</div>
     <script>
-        const elemento=document.getElementByclass(clase1)
-            for(const elemento of elementos){
-                elemento.style.backgroundColor='green';
-            }
+        const elementos=document.getElementsByClassName('clase-1')
+        for (const elemento of elementos){
+            elemento.style.backgroundColor='green';
+        }
     </script>
-
 </body>
 </html>

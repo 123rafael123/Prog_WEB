@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>stopPropagation</title>
 </head>
 <body>
-    <div id="elementoPadre">elementopadre<div id="elementoHijo">elemento</div></div>
+    <div id="elementoPadre"> Padre
+        <div id="elementoHijo">Elemento</div></div>
     <script>
-
-const elementoHijo= document.getElementById('elementoHijo')
-elementoHijo.addEventListener('click',(evento)=>{ 
-            evento.preventDefault()
-            alert('evento hijo')
-        }
-    )
-    const elementoPadre= document.getElementById('elementoPadre')
-elementoPadre.addEventListener('click',(evento)=>{ 
-            evento.preventDefault()
+        const elementoHijo=document.getElementById('elementoHijo')
+        elementoHijo.addEventListener('click',(evento)=>{
+            evento.stopPropagation()
+            alert('evento Hijo')
+        })
+        const elementoPadre=document.getElementById('elementoPadre')
+        elementoPadre.addEventListener('click',(evento)=>{
             alert('evento Padre')
-        }
-    )
+        })
+
     </script>
 </body>
 </html>

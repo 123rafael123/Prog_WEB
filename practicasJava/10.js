@@ -1,9 +1,9 @@
 const ciudadesDestino="Sucre";
 const ciudadesDisponibles= new Array ("Santiago","Bogota","Lima","Monte Video");
- 
+
 let edadPasajero=17;
 let compania=false;
- 
+
 if(edadPasajero>=18 || compania){
     if(ciudadesDestino.indexOf(ciudadesDestino)>-1){
         console.log("Pasaje disponible");

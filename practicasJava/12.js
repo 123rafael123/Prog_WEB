@@ -1,56 +1,38 @@
-const datos=[
-
+const datos =[
     {
-        'materia':'PRogramcion web',
-        'calificacion':70
+        "materia":"Programacion Web",
+        "calificacion":51,
     },
     {
-       'materia':'Programcion III',
-        'calificacion':60
+        "materia":"Programacion III",
+        "calificacion":40,
     },
     {
-        'materia':'Ingles',
-         'calificacion':79
-     },
-     {
-        'materia':'Programcion Movil',
-         'calificacion':50
-         
-     },
-     {
-        'materia':'Base de datos',
-         'calificacion':40
-     },
-     {
-        'materia':'Sitemas Operativos',
-         'calificacion':40
-     },
-     {
-        'materia':'IoT',
-         'calificacion':40
-
-     },
-     {
-        'materia':'Programcion III',
-         'calificacion':45
-     }
-
+        "materia":"Base De Datos",
+        "calificacion":60,
+    },
+    {
+        "materia":"Programacion Movil",
+        "calificacion":30,
+    },
+    {
+        "materia":"Ingles",
+        "calificacion":100,
+    },
 ];
-
-let i=0;
-const NotaAprobacion=51;
-let materiaSeleccionada="";
+let i=0
+const NotaAprovacion=51;
+let materialSeleccionado="";
 do{
-    if(datos[i].calificacion<=NotaAprobacion){
-        materiaSeleccionada=datos[i].materia
+    if(datos[i].calificacion<=NotaAprovacion){
+        materialSeleccionado=datos[i].materia
         break;
     }
     i++
-}while(i<datos.length && materiaSeleccionada=="")
-    if(materiaSeleccionada==""){
-        console.log("no aprobaste")
-
+}while(i<datos.length && materialSeleccionado =="")
+    if(materialSeleccionado==""){   
+    console.log("NO APROBASTE LA MATERIA")
     }
-    else{  
-       console.log("aprobaste" + materiaSeleccionada);
+    else{
+        console.log("APROBASTE LA MATERIA DE "+materialSeleccionado);
     }

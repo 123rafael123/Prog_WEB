@@ -1,59 +1,30 @@
 const datos =[
-    {'materia':'programacion Web',
-        'calificacion':70
+    {
+        "materia":"Programacion Web",
+        "calificacion":51,
     },
     {
-        'materia':'Base de datos',
-        'calificacion':80
-    }
-    ,
+        "materia":"Programacion III",
+        "calificacion":40,
+    },
     {
-        'materia':'ingles',
-        'calificacion':90
-    }
-    ,
+        "materia":"Base De Datos",
+        "calificacion":60,
+    },
     {
-        'materia':'programacion Movil',
-        'calificacion':100
-    }
-    ,
+        "materia":"Programacion Movil",
+        "calificacion":30,
+    },
     {
-        'materia':'robotica',
-        
-        'calificacion':50
-    }
-    ,
-    {
-        'materia':'ingles2',
-        'calificacion':60
-    }
-    ,
-    {
-        'materia':'programacion Web2',
-        'calificacion':40
-    }
-    ,
-    {
-        'materia':'logica computacional',
-        'calificacion':30
-    }
-    ,
-    {
-        'materia':'programacion2',
-        'calificacion':20
-    }
-    ,
-    {
-        'materia':'base de datos2',
-        'calificacion':10
-    }
+        "materia":"Ingles",
+        "calificacion":100,
+    },
 ];
-const procesarDatos=datos=>{
+const procesarDatos= datos =>{
     return datos
-    .filter(datos=>datos.calificacion>51).map(datos=>{
-        const{materia}=datos;
-        return materia.length>5 ? materia.toUpperCase():materia.toLowerCase()
-    });
+         .filter(datos => datos.calificacion >51)
+         .map(datos => {
+            const{materia}=datos;
+            return materia.length >5 ?
+         })
 }
-const resultado=procesarDatos(datos);
-console.log(resultado);
