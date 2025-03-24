@@ -1,0 +1,36 @@
+.head{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-left: 550px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #0b0606;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color:rgb(255, 255, 255);
+    height: 140px;
+}
+.head__logo{
+height: 140px;
+margin-bottom: 1rem;
+width: 250px;
+align-items: center;
+}
+
+.head_nav{
+    text-align: center;
+}
+.head__link{
+    margin-right: 500px;
+    font-family: 'Montserrat',sans-serif;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    color: white;
+    background-color: rgb(74, 186, 230);
+    font-size: x-large;
+}
