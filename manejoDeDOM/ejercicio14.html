@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,4 +22,29 @@
 
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopPropagation</title>
+</head>
+<body>
+    <div id="elementoPadre"> Padre
+        <div id="elementoHijo">Elemento</div></div>
+    <script>
+        const elementoHijo=document.getElementById('elementoHijo')
+        elementoHijo.addEventListener('click',(evento)=>{
+            evento.stopPropagation()
+            alert('evento Hijo')
+        })
+        const elementoPadre=document.getElementById('elementoPadre')
+        elementoPadre.addEventListener('click',(evento)=>{
+            alert('evento Padre')
+        })
+
+    </script>
+</body>
+>>>>>>> e928173f7f5c5453756a64c12de40fe30fdeebb9
 </html>

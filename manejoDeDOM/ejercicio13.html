@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,4 +16,23 @@
         })
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevenir accion por defecto</title>
+</head>
+<body>
+    <div id="enlace" href="https://facebook.com">Enlace</div>
+    <script>
+        const enlace=document.getElementById('enlace')
+        enlace.addEventListener('click',(evento)=>{
+            evento.preventDefault()
+            alert('enlace bloqueado')
+        })
+    </script>
+</body>
+>>>>>>> e928173f7f5c5453756a64c12de40fe30fdeebb9
 </html>

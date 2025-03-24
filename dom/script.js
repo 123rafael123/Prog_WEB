@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import checkComplete from "./componentes/checkComplete.js";
 import deleteIcon from "./componentes/deleteIcon.js";
 
@@ -61,3 +62,68 @@ const eliminarTarea = (evento) => {
     const parent = evento.target.parentElement.parentElement;
     parent.remove();
 };
+=======
+import checkComplete from "./componentes/checkComplete.js";
+import deleteIcon from "./componentes/deleteIcon.js";
+
+const btn = document.querySelector('[data-form-btn]');
+console.log(btn);
+
+const createTask = (evento) => {
+    evento.preventDefault();
+    const input = document.querySelector('[data-form-input]');
+    console.log(input.value);
+    const value = input.value;
+    const list = document.querySelector('[data-list]');
+    const task = document.createElement('li');
+    task.classList.add('card');
+    input.value = "";
+
+    const taskContent = document.createElement('div');
+    
+    const checkIcon = checkComplete();
+    taskContent.appendChild(checkIcon);
+    
+    const taskText = document.createElement('span');
+    taskText.classList.add('task');
+    taskText.innerText = value;
+    taskContent.appendChild(taskText);
+
+    const deleteIconElement = deleteIcon();
+    taskContent.appendChild(deleteIconElement);
+    
+    task.appendChild(taskContent);
+    
+    list.appendChild(task);
+    
+    console.log("Tarea creada:", value);
+};
+
+btn.addEventListener('click', createTask);
+
+const checkComplete = () => {
+    const i = document.createElement('i');
+    i.classList.add("far", "fa-check-square", "icon");
+    i.addEventListener('click', toggleComplete);
+    return i;
+};
+
+const toggleComplete = (evento) => {
+    const element = evento.target;
+    element.classList.toggle('fas');
+    element.classList.toggle('completeIcon');
+    element.classList.toggle('far');
+};
+
+const deleteIcon = () => {
+    const i = document.createElement('i');
+    i.classList.add('fas', 'fa-trash-alt', 'trashIcon', 'icon');
+    i.addEventListener('click', eliminarTarea);
+    return i;
+};
+
+const eliminarTarea = (evento) => {
+    const parent = evento.target.parentElement.parentElement;
+    parent.remove();
+};
+>>>>>>> e928173f7f5c5453756a64c12de40fe30fdeebb9

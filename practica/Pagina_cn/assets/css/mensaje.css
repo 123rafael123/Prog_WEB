@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mensaje{
     padding-top: 1.3rem;
     padding-bottom: 3.5rem;
@@ -43,4 +44,51 @@
     margin-left: 150px;
     font-family: 'Montserrat',sans-serif;
     font-size: 10px;
+=======
+.mensaje{
+    padding-top: 1.3rem;
+    padding-bottom: 3.5rem;
+    background-color: red;
+    width: 25%;
+}
+.mensaje1{
+    display: flex;
+    padding-top: 1.3rem;
+    padding-bottom: 3.5rem;
+    background-color: brown;
+    width: 25%;
+}
+.mensaje__lista{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mensaje__item{
+    max-width: 300px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.5rem 0 2rem 5rem;
+}
+.mensaje__logo{
+    margin-left: 25px;
+    background-image: url('../img/prod1.jpg');
+    height: 165px;
+    width: 165px;
+}
+.mensaje__item__titulo{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: -30px;
+    margin-left: 150px;
+
+}
+.mensaje__item__texto{
+    line-height: normal;
+    margin-left: 150px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 10px;
+>>>>>>> e928173f7f5c5453756a64c12de40fe30fdeebb9
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .elemento{display: flex;
     background-color: #00b7ff;
     padding-top: 2rem;
@@ -40,4 +41,48 @@
     border-color: 3px solid #000000;
     margin: 0 auto;
     justify-content: space-around;
+=======
+.elemento{display: flex;
+    background-color: #00b7ff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+}
+.elemento__titulo{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.elemento__figura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.elemento__figura--imagen{
+    width: 50vw;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    height: 600px;
+
+}
+.elemento__figura--texto{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: unset;
+    font-size: 3rem;
+}
+.elemento__boton{
+    font-family: 'Montserrat',sans-serif;
+    color: #ffffff;
+    border-color: 3px solid #000000;
+    margin: 0 auto;
+    justify-content: space-around;
+>>>>>>> e928173f7f5c5453756a64c12de40fe30fdeebb9
 }
