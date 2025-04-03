@@ -1,4 +1,4 @@
-var nombre="xd"
-let direccion="24"
-const hola="sasa"
-let edad=19
+var nombre="su nombre completo";
+let direccion="calle guido villagomez";
+const hola = "holiwis";
+let edad = 12;

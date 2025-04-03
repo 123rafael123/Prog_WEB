@@ -1,6 +1,8 @@
-let numl=9999;
-var num2=222;
-const num3=2020;
+let num1 = 1221;
+var num2 = 2025;
+const num3 = 639;
 
-let sumar = numl+num2+num3;
+let valor = 'true';
+
+let sumar = num1 + num2 + num3;
 console.log(sumar);

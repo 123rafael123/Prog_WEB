@@ -1,34 +1,57 @@
-const datos =[
+const datos = [
     {
-        "materia":"Programacion Web",
-        "calificacion":51,
+        'materia':'Programacion Web I',
+        'calificacion': 99
     },
     {
-        "materia":"Programacion III",
-        "calificacion":40,
+        'materia':'Base de Datos I',
+        'calificacion': 99
     },
     {
-        "materia":"Base De Datos",
-        "calificacion":60,
+        'materia':'Programacion II',
+        'calificacion': 97
     },
     {
-        "materia":"Programacion Movil",
-        "calificacion":30,
+        'materia':'Ingles II',
+        'calificacion': 97
     },
     {
-        "materia":"Ingles",
-        "calificacion":100,
+        'materia':'Programacion Web II',
+        'calificacion': 100
     },
+    {
+        'materia':'Base de Datos II',
+        'calificacion': 100 
+    },
+    {
+        'materia':'Programacion III',
+        'calificacion': 100
+    },
+    {
+        'materia':'Ingles III',
+        'calificacion': 100 
+    },
+    {
+        'materia':'Sistemas Operativos',
+        'calificacion': 95
+    },
+    {
+        'materia':'Programacion Movil I',
+        'calificacion': 100
+    }
 ];
-let i=0
-const NotaAprovacion=51;
-let materialSeleccionado="";
-for(let i=0; i<datos.length && NotaAprovacion =="" ;i++){
-    if(datos[i].calificacion<=NotaAprovacion){
-        materialSeleccionado=datos[i].materia
+
+let materiaSeleccionada = '';
+const NotaAprobacion = 51;
+
+for (let i = 0; i < datos.length && notaAprobacion == ''; i++) {
+    if (datos[i].calificacion <= notaAprobacion) {
+        materiaSeleccionada = datos[i].materia;
     }
 }
-if(materialSeleccionado=="")
-    console.log("No hay materias aprobadas");
-else
-console.log("La materia aprobada es "+materialSeleccionado)
+
+if (materiaSeleccionada == '')
+    console.log("--..");
+else 
+    console.log("----------");
+

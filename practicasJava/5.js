@@ -1,11 +1,7 @@
-const valor=2222;
+const valor1 = 21212;
 console.log(valor1);
+const apellido1 = "Layme Delgado";
+const nombre1 = "Ignacio Adrian";
 
-
-const apellido="tu";
-const nombre="tu nombre";
-console.log(apellido);
-console.log(nombre);
-
-let combrecompeto= nombre +" "+ apellido;
-console.log(nombrecompleto);
+let nombreCompleto = nombre1 + " " + apellido1;
+console.log(nombreCompleto);

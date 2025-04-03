@@ -1,21 +1,19 @@
-const ciudadesDestino="Sucre";
-const ciudadesDisponibles= new Array ("Santiago","Bogota","Lima","Monte Video");
+const ciudadDestino = "Sucre";
+const ciudadesDisponibles = new Array("Santiago", "Paris", "Tokio", "Buenos Aires", "Lima", "Montevideo", "Sucre");
 
-let edadPasajero=17;
-let compania=false;
+let edadPasajero = 17;
+let compania = false;
 
-if(edadPasajero>=18 || compania){
-    if(ciudadesDestino.indexOf(ciudadesDestino)>-1){
-        console.log("Pasaje disponible");
+if (edadPasajero >= 18 || compania){
+    if (ciudadDestino.indexOf(ciudadDestino) > -1){
+        console.log('pasaje disponible');
+    } else{
+        console.log('ciudad no disponible');
     }
-    else{
-        console.log("ciudad no disponible");
+} else{
+    if (edadPasajero >= 16 && ciudadDestino == 'Sucre'){
+        console.log('pasaje disponible');
+    } else{
+        console.log('pasajero no cumple las reglas');
     }
-}else{
-        if(edadPasajero>=16 && ciudadesDestino=="Sucre"){
-            console.log("Pasaje Disponible");
-        }
-        else{
-            console.log("Pasajero no cumple las reglas");
-        }
-    }
+}

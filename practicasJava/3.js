@@ -1,3 +1,4 @@
-
-let nombrepersona="mi nombre";
-let cargoempleado="guerita";
+let nombrePersona = "Ignacio Adrian";
+let cargoEmpleado = "CargoGerente";
+console.log(nombrePersona);
+console.log(cargoEmpleado);

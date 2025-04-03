@@ -1,7 +1,8 @@
-const nombre ="tu nombre";
-const app ="la aplicacion";
-let usocompleto=`la frase completa es $(nombre) $(app)`;
-console.log(usocompleto)
+const nombre = "Ignacio Adrian";
+const app = "Rapidin";
+let usoCompleto = `la frase completa es ${nombre} ${app}`;
+/* tilde invertida ` */
+console.log(usoCompleto);
 
-let segundos =29;
-console.log (`El segundo es $(segundos)`)
+let segundos = 29;
+console.log(`El segundo es ${segundos}`);
