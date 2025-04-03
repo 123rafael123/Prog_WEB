@@ -3,14 +3,6 @@ let conAcompanante = true;
 const precioPasaje = 1000;
 const ciudadDestino = "Sucre";
 const ciudadesDisponibles = new Array("Santiago", "Paris", "Tokio", "Buenos Aires", "Lima", "Montevideo", "Sucre");
-
-// Solo un = : es cuando asignamos a una VARIABLE = VALOR
-
-// Solo dos == : es una comparacion
-
-// Solo tres === :
-
-
 if (precioPasaje === 1000){
 
     console.log(`el pasaje cuesta 1000`);

@@ -1,7 +1,6 @@
-const nombre = "Ignacio Adrian";
-const app = "Rapidin";
+const nombre = "Rafael";
+const app = "Nogales";
 let usoCompleto = `la frase completa es ${nombre} ${app}`;
-/* tilde invertida ` */
 console.log(usoCompleto);
 
 let segundos = 29;
